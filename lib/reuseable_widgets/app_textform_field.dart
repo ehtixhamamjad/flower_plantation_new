@@ -52,6 +52,7 @@ class ReuseTextField extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+
       child: TextFormField(
         cursorColor: appthem,
         cursorWidth: 1,

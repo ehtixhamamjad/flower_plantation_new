@@ -47,12 +47,14 @@ class LaptopGridProductComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-
-      height: 13.4.h,
-
+      height:14.5.h,
+      color: colorWhite.withOpacity(0.1),
       child: ListView.builder(
+        shrinkWrap: true,
+
         padding: EdgeInsets.symmetric(horizontal: 8),
         scrollDirection: Axis.horizontal,
+
         itemCount: printerList.length,
         // Replace with your actual item count
         itemBuilder:
