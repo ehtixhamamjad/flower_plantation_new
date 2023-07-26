@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:sizer/sizer.dart';
 import 'dart:io';
+import '../../constant/images.assets.dart';
 import '../../constant/style/app_color.dart';
 import '../../reuseable_widgets/app_textform_field.dart';
 import 'home_component/Lise_View_component.dart';
@@ -21,7 +22,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   TextEditingController searchController = TextEditingController();
-
 
   @override
   Widget build(BuildContext context) {
@@ -85,17 +85,16 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                LaptopGridProductComponent(),
-              ],
-            ),
+            // Column(
+            //   mainAxisAlignment: MainAxisAlignment.start,
+            //   crossAxisAlignment: CrossAxisAlignment.start,
+            //   children: [
+            //     LaptopGridProductComponent(),
+            //   ],
+            // ),
             Padding(
               padding: padA1,
               child: Column(
-
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -106,6 +105,250 @@ class _HomeScreenState extends State<HomeScreen> {
                   vSpac12,
                   LaptopListViewProductComponent()
                 ],
+              ),
+            ),
+
+            Padding(
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              child: Container(
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Stack(
+                          children: [
+                            Positioned(
+
+                              left: 28.w,
+                              child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(50),
+                                      topRight: Radius.circular(10),
+                                      bottomLeft:Radius.circular(60),
+                                      bottomRight:Radius.circular(90),
+
+                                    ),
+                                    color: cRed,
+
+                                  ),
+
+                                  height: 10.h,
+                                  width: 20.w,
+
+                                  child: Center(
+
+                                      child: Icon(Icons.add,color:colorWhite,))),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: cGrey,
+                                borderRadius: BorderRadius.circular(12)
+                              ),
+                              width: 46.w,
+                              height: 30.h,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Column(
+
+                                    children: [
+                                      Center(
+                                          child: Text(
+                                            "Nursery flower",
+                                            style: hMedium.copyWith(
+                                                color: appthem, fontSize: 11.sp,fontWeight: FontWeight.bold),
+                                          )),
+
+
+                                    ],
+                                  ),
+
+                                ],
+                              ),
+                            ),
+                            Positioned(
+                              top: 21.h,
+                                left: 9.w,
+                                child: Text("Total flower:20",style: hsmall.copyWith(color: appthem),))
+                          ],
+                        ),
+                        Stack(
+                          children: [
+                            Positioned(
+
+                              left: 28.w,
+                              child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(50),
+                                      topRight: Radius.circular(10),
+                                      bottomLeft:Radius.circular(60),
+                                      bottomRight:Radius.circular(90),
+
+                                    ),
+                                    color: cRed,
+
+                                  ),
+
+                                  height: 10.h,
+                                  width: 20.w,
+
+                                  child: Center(
+
+                                      child: Icon(Icons.add,color:colorWhite,))),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: cGrey,
+                                borderRadius: BorderRadius.circular(12)
+                              ),
+                              width: 46.w,
+                              height: 30.h,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Column(
+
+                                    children: [
+                                      Center(
+                                          child: Text(
+                                            "Nursery flower",
+                                            style: hMedium.copyWith(
+                                                color: appthem, fontSize: 11.sp,fontWeight: FontWeight.bold),
+                                          )),
+
+
+                                    ],
+                                  ),
+
+                                ],
+                              ),
+                            ),
+                            Positioned(
+                              top: 21.h,
+                                left: 9.w,
+                                child: Text("Total flower:20",style: hsmall.copyWith(color: appthem),))
+                          ],
+                        ),
+
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 10, right: 10,bottom: 10),
+              child: Container(
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Stack(
+                          children: [
+                            Positioned(
+
+                              left: 28.w,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(50),
+                                      topRight: Radius.circular(10),
+                                      bottomLeft:Radius.circular(60),
+                                      bottomRight:Radius.circular(90),
+
+                                    ),
+                                    color: cRed,
+
+                                ),
+
+                                  height: 10.h,
+                                  width: 20.w,
+
+                                  child: Center(
+
+                                      child: Icon(Icons.add,color:colorWhite,))),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: cGrey,
+                                  borderRadius: BorderRadius.circular(12)
+                              ),
+                              width: 46.w,
+                              height: 30.h,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Center(
+                                      child: Text(
+                                    "abcdfasd",
+                                    style: hMedium.copyWith(
+                                        color: appthem, fontSize: 15),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                        Stack(
+                          children: [
+                            Positioned(
+
+                              left: 28.w,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(50),
+                                      topRight: Radius.circular(10),
+                                      bottomLeft:Radius.circular(60),
+                                      bottomRight:Radius.circular(90),
+
+                                    ),
+                                    color: cRed,
+
+                                ),
+
+                                  height: 10.h,
+                                  width: 20.w,
+
+                                  child: Center(
+
+                                      child: Icon(Icons.add,color:colorWhite,))),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: cGrey,
+                                  borderRadius: BorderRadius.circular(12)
+                              ),
+                              width: 46.w,
+                              height: 30.h,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Center(
+                                      child: Text(
+                                    "abcdfasd",
+                                    style: hMedium.copyWith(
+                                        color: appthem, fontSize: 15),
+                                  )),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+
+                      ],
+                    ),
+                  ],
+                ),
               ),
             )
           ],

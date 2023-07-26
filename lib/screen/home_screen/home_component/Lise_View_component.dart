@@ -12,35 +12,35 @@ class LaptopListViewProductComponent extends StatelessWidget {
   LaptopListViewProductComponent({super.key});
   final List<Map<String, dynamic>> printerList = [
     {
-      'image': ImageAssests.appleimage.toString(),
+      'image': ImageAssests.flawer1.toString(),
       'text': 'HP',
     },
     {
-      'image': ImageAssests.appleimage.toString(),
+      'image': ImageAssests.flawer2.toString(),
       'text': 'apple',
     },
     {
-      'image': ImageAssests.dellimage.toString(),
+      'image': ImageAssests.flawer3.toString(),
       'text': 'Dell',
     },
     {
-      'image': ImageAssests.hpimage.toString(),
+      'image': ImageAssests.flawer4.toString(),
       'text': 'toshiba',
     },
     {
-      'image': ImageAssests.dellimage.toString(),
+      'image': ImageAssests.flawer5.toString(),
       'text': 'tables',
     },
     {
-      'image': ImageAssests.appleimage.toString(),
+      'image': ImageAssests.flawer2.toString(),
       'text': '2 in 1',
     },
     {
-      'image': ImageAssests.dellimage.toString(),
+      'image': ImageAssests.flawer4.toString(),
       'text': 'Chrome',
     },
     {
-      'image': ImageAssests.appleimage.toString(),
+      'image': ImageAssests.flawer3.toString(),
       'text': 'toshiba',
     },
   ];
@@ -103,6 +103,7 @@ class LaptopListViewProductComponent extends StatelessWidget {
                           BorderRadius.circular(
                               8)),
                       height: 14.h,
+                      width: 35.w,
                       child: Image.asset(
                           fit: BoxFit.cover,
                           printerList[index]["image"]
