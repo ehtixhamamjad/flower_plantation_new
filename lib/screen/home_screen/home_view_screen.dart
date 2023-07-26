@@ -1,9 +1,11 @@
 import 'package:flower_plantation_new/constant/padding.dart';
 import 'package:flower_plantation_new/constant/spacing.dart';
 import 'package:flower_plantation_new/constant/style/app_textstyle.dart';
+import 'package:flower_plantation_new/screen/product_details/product_details.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:sizer/sizer.dart';
 import 'dart:io';
@@ -117,251 +119,95 @@ class _HomeScreenState extends State<HomeScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Stack(
-                          children: [
-                            Positioned(
-
-                              left: 28.w,
-                              child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(50),
-                                      topRight: Radius.circular(10),
-                                      bottomLeft:Radius.circular(60),
-                                      bottomRight:Radius.circular(90),
-
-                                    ),
-                                    color: cRed,
-
-                                  ),
-
-                                  height: 10.h,
-                                  width: 20.w,
-
-                                  child: Center(
-
-                                      child: Icon(Icons.add,color:colorWhite,))),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                  color: cGrey,
-                                borderRadius: BorderRadius.circular(12)
-                              ),
-                              width: 46.w,
-                              height: 25.h,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Column(
-
-                                    children: [
-                                      Center(
-                                          child: Text(
-                                            "Nursery flower",
-                                            style: hMedium.copyWith(
-                                                color: appthem, fontSize: 11.sp,fontWeight: FontWeight.bold),
-                                          )),
-
-
-                                    ],
-                                  ),
-
-                                ],
-                              ),
-                            ),
-                            Positioned(
-                              top: 14.h,
-                                left: 9.w,
-                                child: Text("Total flower:20",style: hsmall.copyWith(color: appthem),))
-                          ],
-                        ),
-                        Stack(
-                          children: [
-                            Positioned(
-
-                              left: 28.w,
-                              child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(50),
-                                      topRight: Radius.circular(10),
-                                      bottomLeft:Radius.circular(60),
-                                      bottomRight:Radius.circular(90),
-
-                                    ),
-                                    color: cRed,
-
-                                  ),
-
-                                  height: 10.h,
-                                  width: 20.w,
-
-                                  child: Center(
-
-                                      child: Icon(Icons.location_city,color:colorWhite,))),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                  color: cGrey,
-                                borderRadius: BorderRadius.circular(12)
-                              ),
-                              width: 46.w,
-                              height: 25.h,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Column(
-
-                                    children: [
-                                      Center(
-                                          child: Text(
-                                            "View ALL flower",
-                                            style: hMedium.copyWith(
-                                                color: appthem, fontSize: 11.sp,fontWeight: FontWeight.bold),
-                                          )),
-
-
-                                    ],
-                                  ),
-
-                                ],
-                              ),
-                            ),
-                            Positioned(
-                                top: 14.h,
-                                left: 9.w,
-                                child: Text("Total flower:20",style: hsmall.copyWith(color: appthem),))
-                          ],
-                        ),
-
+                        InkWell(
+                          onTap: (){
+                            Get.to(()=>ProductDetails());
+                          },
+                            child: widgetProductitem(Colors.blue)),
+                        widgetProductitem(Colors.orange),
+                      ],
+                    ),
+                    SizedBox(height: 3.h,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        widgetProductitem(Colors.red),
+                        widgetProductitem(Colors.cyan),
                       ],
                     ),
                   ],
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 10, right: 10,bottom: 10),
-              child: Container(
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Stack(
-                          children: [
-                            Positioned(
 
-                              left: 28.w,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(50),
-                                      topRight: Radius.circular(10),
-                                      bottomLeft:Radius.circular(60),
-                                      bottomRight:Radius.circular(90),
-
-                                    ),
-                                    color: cRed,
-
-                                ),
-
-                                  height: 10.h,
-                                  width: 20.w,
-
-                                  child: Center(
-
-                                      child: Icon(Icons.message_outlined,color:colorWhite,))),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: cGrey,
-                                  borderRadius: BorderRadius.circular(12)
-                              ),
-                              width: 46.w,
-                              height: 25.h,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Center(
-                                      child: Text(
-                                    "Your future Plan",
-                                    style: hMedium.copyWith(
-                                        color: appthem, fontSize: 15),
-                                  )),
-                                ],
-                              ),
-                            ),
-                            Positioned(
-                                top: 14.h,
-                                left: 9.w,
-                                child: Text("Total flower:29",style: hsmall.copyWith(color: appthem),))
-                          ],
-                        ),
-                        Stack(
-                          children: [
-                            Positioned(
-
-                              left: 28.w,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(50),
-                                      topRight: Radius.circular(10),
-                                      bottomLeft:Radius.circular(60),
-                                      bottomRight:Radius.circular(90),
-
-                                    ),
-                                    color: cRed,
-
-                                ),
-
-                                  height: 10.h,
-                                  width: 20.w,
-
-                                  child: Center(
-
-                                      child: Icon(Icons.star,color:colorWhite,))),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: cGrey,
-                                  borderRadius: BorderRadius.circular(12)
-                              ),
-                              width: 46.w,
-                              height: 25.h,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Center(
-                                      child: Text(
-                                    "flower in your area",
-                                    style: hMedium.copyWith(
-                                        color: appthem, fontSize: 15),
-                                  )),
-                                ],
-                              ),
-                            ),
-                            Positioned(
-                                top: 14.h,
-                                left: 9.w,
-                                child: Text("Total flower:20",style: hsmall.copyWith(color: appthem),))
-                          ],
-                        ),
-
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            )
           ],
         ),
       ),
     )));
   }
+  Widget widgetProductitem(color){
+    return   Stack(
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(13),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.blue.withOpacity(0.4),
+                  offset: Offset(0.0, 15.0),
+                  blurRadius: 15,
+                  spreadRadius: 2)
+            ],
+          ),
+          width: 46.w,
+          height: 26.h,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  Center(
+                      child: Text(
+                        "View ALL flower",
+                        style: hMedium.copyWith(
+                            color: colorWhite,
+                            fontSize: 11.sp,
+                            fontWeight: FontWeight.bold),
+                      )),
+                  Text(
+                    "Total flower:20",
+                    style:
+                    hsmall.copyWith(color: colorWhite),
+                  )
+                ],
+              ),
+            ],
+          ),
+        ),
+        Positioned(
+          left: 26.w,
+          child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(50),
+                  topRight: Radius.circular(19),
+                  bottomLeft: Radius.circular(45),
+                  bottomRight: Radius.circular(60),
+                ),
+                color: Colors.white.withOpacity(0.4),
+              ),
+              height: 10.h,
+              width: 20.w,
+              child: Center(
+                  child: Icon(
+                    Icons.location_city,
+                    color: colorWhite,
+                  ))),
+        ),
+      ],
+    );
+  }
+
 }
