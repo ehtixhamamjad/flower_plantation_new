@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 borderRadius: BorderRadius.circular(12)
                               ),
                               width: 46.w,
-                              height: 30.h,
+                              height: 25.h,
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -171,7 +171,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                             Positioned(
-                              top: 21.h,
+                              top: 14.h,
                                 left: 9.w,
                                 child: Text("Total flower:20",style: hsmall.copyWith(color: appthem),))
                           ],
@@ -199,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                                   child: Center(
 
-                                      child: Icon(Icons.add,color:colorWhite,))),
+                                      child: Icon(Icons.location_city,color:colorWhite,))),
                             ),
                             Container(
                               decoration: BoxDecoration(
@@ -207,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 borderRadius: BorderRadius.circular(12)
                               ),
                               width: 46.w,
-                              height: 30.h,
+                              height: 25.h,
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -217,7 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     children: [
                                       Center(
                                           child: Text(
-                                            "Nursery flower",
+                                            "View ALL flower",
                                             style: hMedium.copyWith(
                                                 color: appthem, fontSize: 11.sp,fontWeight: FontWeight.bold),
                                           )),
@@ -230,7 +230,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                             Positioned(
-                              top: 21.h,
+                                top: 14.h,
                                 left: 9.w,
                                 child: Text("Total flower:20",style: hsmall.copyWith(color: appthem),))
                           ],
@@ -273,7 +273,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                                   child: Center(
 
-                                      child: Icon(Icons.add,color:colorWhite,))),
+                                      child: Icon(Icons.message_outlined,color:colorWhite,))),
                             ),
                             Container(
                               decoration: BoxDecoration(
@@ -281,20 +281,24 @@ class _HomeScreenState extends State<HomeScreen> {
                                   borderRadius: BorderRadius.circular(12)
                               ),
                               width: 46.w,
-                              height: 30.h,
+                              height: 25.h,
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Center(
                                       child: Text(
-                                    "abcdfasd",
+                                    "Your future Plan",
                                     style: hMedium.copyWith(
                                         color: appthem, fontSize: 15),
                                   )),
                                 ],
                               ),
                             ),
+                            Positioned(
+                                top: 14.h,
+                                left: 9.w,
+                                child: Text("Total flower:29",style: hsmall.copyWith(color: appthem),))
                           ],
                         ),
                         Stack(
@@ -320,7 +324,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                                   child: Center(
 
-                                      child: Icon(Icons.add,color:colorWhite,))),
+                                      child: Icon(Icons.star,color:colorWhite,))),
                             ),
                             Container(
                               decoration: BoxDecoration(
@@ -328,20 +332,24 @@ class _HomeScreenState extends State<HomeScreen> {
                                   borderRadius: BorderRadius.circular(12)
                               ),
                               width: 46.w,
-                              height: 30.h,
+                              height: 25.h,
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Center(
                                       child: Text(
-                                    "abcdfasd",
+                                    "flower in your area",
                                     style: hMedium.copyWith(
                                         color: appthem, fontSize: 15),
                                   )),
                                 ],
                               ),
                             ),
+                            Positioned(
+                                top: 14.h,
+                                left: 9.w,
+                                child: Text("Total flower:20",style: hsmall.copyWith(color: appthem),))
                           ],
                         ),
 
