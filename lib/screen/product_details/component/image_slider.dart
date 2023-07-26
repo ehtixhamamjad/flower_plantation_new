@@ -129,7 +129,7 @@ class _HpImageSliderState extends State<HpImageSlider> {
                                   width: 9.w,
                                   height: 5.h,
                                   child: Icon(
-                                    Icons.share_outlined,
+                                    Icons.add,
                                     size: 16,
                                     color: colorWhite,
                                   )),
